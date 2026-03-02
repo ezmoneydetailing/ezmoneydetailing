@@ -6,7 +6,6 @@
 <title>EZ Money Detailing | Charlottesville VA</title>
 <meta name="description" content="Mobile auto detailing serving Charlottesville, VA and surrounding areas. Exterior $30, Interior $45, Full Detail $80. Call 434-960-2833.">
 
-<!-- Modern Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -19,11 +18,34 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #0b0b0f;
     color: white;
+    position: relative;
+}
+
+/* === BACKGROUND LOGO WATERMARK === */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.12; /* More visible */
+    pointer-events: none;
+    z-index: 0;
+}
+
+header, .hero, .section, footer {
+    position: relative;
+    z-index: 1;
 }
 
 /* Header */
 header {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     backdrop-filter: blur(8px);
     padding: 20px;
     text-align: center;
@@ -32,7 +54,7 @@ header {
     letter-spacing: 2px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
     padding: 120px 20px 100px;
@@ -52,7 +74,7 @@ header {
     margin: 10px auto;
 }
 
-/* Section Base */
+/* Section */
 .section {
     padding: 90px 20px;
     text-align: center;
@@ -141,6 +163,12 @@ footer {
     .hero h1 {
         font-size: 38px;
     }
+
+    body::before {
+        width: 300px;
+        height: 300px;
+        opacity: 0.10;
+    }
 }
 </style>
 </head>
@@ -161,12 +189,12 @@ EZ MONEY DETAILING
     <h2>About</h2>
     <div class="about">
         <p>
-        EZ Money Detailing was founded by a 17-year-old high school entrepreneur with a strong passion for cars and business.
+        EZ Money Detailing was founded by a 17-year-old high school entrepreneur with a passion for cars and business.
         What started as detailing vehicles for friends and family quickly grew into a professional mobile detailing service
         serving Charlottesville, Virginia and surrounding areas.
         </p>
         <p>
-        Every vehicle is treated with precision, care, and attention to detail.
+        Every vehicle is treated with precision and care.
         My goal is simple — deliver high-quality results at affordable prices while building a trusted local brand.
         </p>
     </div>
