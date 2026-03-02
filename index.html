@@ -104,6 +104,18 @@ header {
     transform: translateY(-5px);
 }
 
+/* Remove bullet dots & clean list styling */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.card li {
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
 .price {
     font-size: 24px;
     font-weight: bold;
@@ -159,29 +171,48 @@ EZ Money Detailing
         </p>
 </div>
 </section>
-
 <section class="section">
     <h2>Our Services</h2>
     <div class="services">
 
         <div class="card">
             <h3>Exterior Detail</h3>
-            <p>$30</p>
+            <p class="price">$30</p>
+            <ul>
+                <li>Hand wash</li>
+                <li>Wheel cleaning</li>
+                <li>Tire shine</li>
+                <li>Exterior wipe down</li>
+                <li>Windows cleaned</li>
+            </ul>
         </div>
 
         <div class="card">
             <h3>Interior Detail</h3>
-            <p>$45</p>
+            <p class="price">$45</p>
+            <ul>
+                <li>Full vacuum</li>
+                <li>Wipe down of all surfaces</li>
+                <li>Stain treatment</li>
+                <li>Interior refresh</li>
+                <li>Windows cleaned</li>
+            </ul>
         </div>
 
         <div class="card">
             <h3>Full Detail</h3>
-            <p>$80</p>
+            <p class="price">$80</p>
+            <ul>
+                <li>Complete exterior wash</li>
+                <li>Full interior vacuum</li>
+                <li>Surface wipe down</li>
+                <li>Tire shine</li>
+                <li>Full vehicle refresh</li>
+            </ul>
         </div>
 
     </div>
 </section>
-
 <section class="section contact">
     <h2>Contact</h2>
     <p>📍 Charlottesville, Virginia (Mobile Service)</p>
