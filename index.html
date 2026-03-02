@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EZ Money Detailing | Charlottesville VA</title>
-<meta name="description" content="Mobile auto detailing serving Charlottesville, VA and surrounding areas. Exterior $30, Interior $45, Full Detail $80. Call 434-960-2833.">
+<meta name="description" content="Mobile auto detailing serving Charlottesville, VA and surrounding areas. Exterior $30, Interior $45, Full Detail $80-$120. Call 434-960-2833.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -33,7 +33,7 @@ body::before {
     background-image: url('logo.png');
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.12; /* More visible */
+    opacity: 0.12;
     pointer-events: none;
     z-index: 0;
 }
@@ -121,6 +121,7 @@ header {
     margin-bottom: 10px;
 }
 
+/* Standard Price */
 .price {
     font-size: 28px;
     font-weight: 700;
@@ -130,9 +131,30 @@ header {
     margin: 15px 0;
 }
 
+/* Full Detail Vehicle Pricing */
+.vehicle-pricing {
+    margin: 12px 0;
+}
+
+.vehicle-pricing span {
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00bfff, #00ffaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+}
+
+.vehicle-pricing small {
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
 .card ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 .card li {
@@ -230,7 +252,17 @@ EZ MONEY DETAILING
 
         <div class="card">
             <h3>Full Detail</h3>
-            <p class="price">$80</p>
+
+            <div class="vehicle-pricing">
+                <span>$80</span>
+                <small>Sedans</small>
+            </div>
+
+            <div class="vehicle-pricing">
+                <span>$120</span>
+                <small>Trucks, SUVs & Vans</small>
+            </div>
+
             <ul>
                 <li>Complete exterior wash</li>
                 <li>Full interior vacuum</li>
